@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* makes it fullscreen */
+  height: 100wh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(blue, black);
+  color: white;
+}
+/* links both classes and gives them the same properties */
+.location,
+.temperature {
+  height: 30wh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .temperature {
+  height: 30wh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+/* selecting the span in the degree section sepeately */
+.degree-section span {
+  margin: 10px;
+  font-size:35px;
+}
+/* making the font size for h2 larger */
+.degree-section h2 {
+  font-size: 40px;
+}
